@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a1119">
+  <meta name="description" content="Delitto in Griglia: risolvi un caso investigativo e sfida un amico online in tempo reale.">
+  <title>Delitto in Griglia — Detective Duel</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="puzzle.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="app-shell">
+    <header class="site-header">
+      <button class="brand" data-action="home" type="button" aria-label="Torna alla home">
+        <span class="brand-mark"><span>DG</span><i></i></span>
+        <span class="brand-copy"><strong>DELITTO<span> IN GRIGLIA</span></strong><small>DETECTIVE CLUB · EST. 2026</small></span>
+      </button>
+      <div class="header-right"><span class="header-label"><span class="live-dot"></span> CASI ORIGINALI</span><button class="header-help" data-action="help" type="button">Come si gioca <span>↗</span></button></div>
+    </header>
+    <main id="app" aria-live="polite"></main>
+    <footer class="site-footer"><span>DELITTO IN GRIGLIA <span class="gold-txt">✳</span> INVESTIGA. DEDUCI. ACCUSA.</span><span>Gioco indipendente ispirato agli enigmi investigativi · Non affiliato a Murdoku</span></footer>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="modal"></div>
+</body>
+</html>

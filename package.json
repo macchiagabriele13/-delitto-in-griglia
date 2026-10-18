@@ -1,0 +1,13 @@
+{
+  "name": "delitto-in-griglia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gioco investigativo di logica con duelli online 1 contro 1",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node test.js && node test-online.js"
+  },
+  "engines": { "node": ">=18" },
+  "license": "UNLICENSED"
+}
